@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header>
+      <nav class="nav">
+        <div class="nav__logo"><img src="./images/logo.svg" alt=""></div>
+        <div class="nav__controls">
+          <ul class="nav__links">
+            <img src="./images/icon-close-menu.svg" alt="" class="nav__close">
+            <li class="nav__item">
+              <button class="nav__arrow">Features</button>
+              <ul class="list list--hidden list--features" aria-expanded="false">
+                <li class="list__item"><span><img src="./images/icon-todo.svg"></span><a href="#">Todo List</a></li>
+                <li class="list__item"><span><img src="./images/icon-calendar.svg"></span><a href="#">Calendar</a></li>
+                <li class="list__item"><span><img src="./images/icon-reminders.svg"></span><a href="#">Reminders</a></li>
+                <li class="list__item"><span><img src="./images/icon-planning.svg"></span><a href="#">Planning</a></li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <button class="nav__arrow">Company</button>
+              <ul class="list list--hidden" aria-expanded="false">
+                <li class="list__item"><a href="#">History</a></li>
+                <li class="list__item"><a href="#">Our Team</a></li>
+                <li class="list__item"><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><button>Careers</button></li>
+            <li class="nav__item"><button>About</button></li>
+            <button class="nav__btn nav__btn--borderless nav__btn--active nav__btn--mobile">Login</button>
+            <button class="nav__btn nav__btn--active nav__btn--mobile">Register</button>
+          </ul>
+          <div class="nav__btns">
+            <img src="./images/icon-menu.svg" alt="" class="nav__hamburguer">
+            <button class="nav__btn nav__btn--borderless nav__btn--active">Login</button>
+            <button class="nav__btn nav__btn--active">Register</button>
+          </div>
+        </div>
+      </nav>
+      <div class="filter"></div>
+  </header>
+  <main class="main main--blur">
+    <div class="hero">
+      <picture class="hero__imgs">
+        <source media="(min-width: 1024px)" alt ="mobile desktop" srcset="./images/image-hero-desktop.png" class="hero__desktop">
+        <img src="./images/image-hero-mobile.png" alt="mobile hero" class="hero__mobile">
+      </picture>
+      <div class="hero__text">
+        <h1 class="hero__title">Make remote work</h1>
+        <p class="hero__p">Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+        <button class="hero__btn">Learn more</button>
+      </div>
+      <div class="hero__logos">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </div>
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
